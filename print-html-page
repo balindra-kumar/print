@@ -1,0 +1,346 @@
+Print Certificate html page
+
+--------------------------
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <link href="computer-application.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form method="post" action="./FrmMarkSheets?MarksheetType=R211870300095" id="form1">
+
+        <!-- <div class="bckbtn text-center">
+            <a id="hlBack" class="btn btn-danger" href="FrmResultShow.aspx">Back</a>
+            <button type="button" class="btn btn-primary print" onclick="window.print()">Print</button>
+        </div> -->
+        <div class="marksheet">
+
+        <!--Top header area like roll no-->
+        <div class="top-header grid-template">
+        <div>
+            <div class="grid-template-child">
+                <div>
+                <p class="text-bold">अनुक्रमांक </p>
+                <p>Roll No.</p>
+                </div>
+                <p>: 1119738</p>
+            </div>
+           
+        </div>
+        <div>
+            <div class="grid-template-child grid-template-child-modified">
+                <div>
+                <p class="text-bold">नामांकन  </p>
+                <p>Enrollment No.</p>
+                </div>
+                <p>: R12-21707</p>
+            </div>
+            <div class="scanner"><img src="scanner.png" alt="" /></div>
+        </div>
+    </div>
+        <!--Top header area closed -->
+
+    <section class="course_name english-content">
+        <div class="text-center subject_name">
+            <h4><span>बैंकलर ऑफ़ कॉमर्स </span></h4>
+            <h3><span>Bachelor of Commerce</span></h4>
+        </div>
+   
+     
+        <div class="name">
+            <div class="text-left"><i>यतः</i></div>
+            <div><span class="text-bold">अंकित सोनी</span></div>
+        </div>
+      <div class="content_text">
+        <p class="text-center hindi_text">
+            <span>  (आत्मज/आत्मजा/पत्नी <span class="text-bold">श्री ओमप्रकाश सोनी,</span> श्रीमती <span class="text-bold">वंदना सोनी</span> )  ने </span><br>
+           बैंचलर ऑफ़ कॉमर्स की उपाधि हेतु निर्धारिता पाठ्यक्रम का अध्ययन<br>
+           नियमित/पूर्व/स्वाध्यायी छात्र/छात्रा के रूप में <br>
+            <span class="text-bold">भोपाल डिग्री महाविद्यालय, भोपाल</span><br>
+           से किया एवं वे निर्धारिता विषयों की परीक्षा <br>
+            वर्ष <span class="text-bold">२०१४ </span>में <span class="text-bold">प्रथम</span> श्रेणी से उत्तीर्ण हुआ/हुई।<br>
+            <span>अतः इस विश्वविद्यालय द्वारा इन्हें वाणिज्य संकाय के अंतर्गत </span><br>
+            <span>बैंचलर ऑफ़ कॉमर्स की उपाधि प्रदान की गई।</span><br>
+        </p>
+
+      </div>
+    </section>
+
+     <!--English content start-->
+     <div class="english-content">
+        <div class="name">
+            <div><span><i>Whereas</i></span></div>
+            <div><span class="text-bold">ANKIT SONI</span></div>
+        </div>
+        <p>(S/o/D/o/W/o Shri <span class="text-bold">OMPRAKASH SONI</span>, Smt. VANDNA SONI) has </p>
+        <p>
+            undergone studies in the prescribed course in the following 
+            subjects as a Regular/Ex/Private student of 
+            <span class="text-bold">BHOPAL DEGREE COLLEGE, BHOPAL </span>
+            and has passed the examination for the degree of 
+            <span class="text-bold"> BACHELOR OF COMMERCE </span>
+            held in the year 2014 in <span class="text-bold">FIRST Division</span>. 
+            Therefore he/she has been awarded the degree of 
+            <span class="text-bold">BACHELOR OF COMMERCE</span> under the faculty of commerce 
+            of this University. 
+        </p>
+        <div class="english-subject">
+            <div class="english-subject-heading">
+               <p> <span>Subject</span></p>
+            </div>
+            <div class="english-subject-content">
+                <p>1. Foundation Course Group 2. Core Subject Group - Account Group and Management</p>
+                <p>3. Specialization Group :-  </p>
+                <p>4. Specialization Group :- <span class="text-bold">COMPUTER APPLICATION</span> </span>
+            </div>
+        </div>
+    </div>
+    <!--English content closed-->
+      
+    <!--footer area start-->
+    <div class="footer-area">
+    <div>
+        <p class="text-bold">कुलसचिव </p>
+        <p>Registrar</p>
+    </div>
+    <div>
+        <p class="text-bold"> भोपाल (म. प्र.), भारत, दिनांक:</p>
+        <p>Bhopal (M.P.), India, Date:</p>
+    </div>
+    <div>
+        <p class="text-bold">कुलपति</p>
+        <p>Vice-Chancellor</p>
+    </div>
+    </div>
+    <!--footer area start-->
+    </div>
+    </form>
+</body>
+
+</html>
+
+
+Style 
+===================
+
+
+
+
+body {
+    font-family: Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+p,span{
+    font-size: 16px;
+}
+.marksheet {
+    width: 220mm;
+    height: 322mm;
+    margin: 0 auto;
+    padding: 12mm;
+
+    background: url('Degree.jpeg') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* ============================================ Header & Footer Section Style ====================== */
+.top-header{
+    padding: 25px;
+
+}
+.grid-template{
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+}
+.grid-template-child{
+    display: grid;
+    grid-template-columns: 70px 200px;
+    align-items: center;
+}
+.grid-template-child-modified{
+    grid-template-columns: 120px 100px;
+}
+.grid-template-child p{
+  margin:0;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+.grid-template-child p span,.footer-area span{
+    font-size: 16px;
+}
+.scanner{
+    padding: 8px 4px 4px 5px;
+    width: 60px;
+    height: 50px;
+    float: right;
+    margin-right: 24px;
+}
+.scanner img{
+    background: #fff;
+    padding: 5px;
+    width: 100%;
+    height:100%;
+
+}
+/* English content style */
+
+
+.english-content{
+    text-align: center;
+    padding: 1px 74px;
+}
+.english-content p, .english-content span{
+    font-size: 18px;
+}
+.english-content p{
+    line-height: 26px;
+
+}
+.name{
+    display: grid;
+    grid-template-columns: 11% 80%;
+}
+.english-subject{
+    display: grid;
+    grid-template-columns: 10% 92%;
+}
+.english-subject p{
+   margin:0;
+}
+.english-subject-content{
+    line-height: inherit;
+    text-align: left;
+}
+
+
+.footer-area{
+    position: absolute;
+    bottom: 7%;
+    left: 16%;
+    right: 16%;
+    padding: 20px;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+}
+
+/* ============================================ Header & Footer Section Style Closed ====================== */
+
+.course_name{
+    margin-top: 27%;
+   
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-bold{
+    font-weight: 800 !important;
+}
+
+.subject_name h4,h3 {
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+.subject_name h4 span{
+    font-size: 21px;
+    margin-bottom: 0;
+}
+.subject_name h3 span{
+    font-size: 25px;
+}
+.hindi_text{
+    line-height: 1.8rem;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Calibri, sans-serif;
+    word-spacing: 8px;
+}
+   @media print {
+    @page {
+        size: auto;
+        padding: 0cm;
+        margin: 0cm;
+        margin-bottom: 0px !important;
+        /* Hide header and footer */
+     
+    }
+            #header, #nav, .noprint {
+                display: none;
+            }
+
+            lottie-player {
+                display: none;
+            }
+
+            html, body {
+                line-height: 1.6em !important;
+                font-size: 10px !important;
+            }
+
+            div#PnlDuck lottie-player {
+                opacity: 0.8;
+                width: 100%;
+                max-width: 30%;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                height: 50vh;
+            }
+          
+            @page :footer {
+                display: none !important;
+            }
+
+            @page :header {
+                display: none !important;
+            }
+
+          
+
+          
+    .pad0 {
+        padding: 0;
+    }
+
+    .table {
+        margin-bottom: 0px;
+    }
+
+    .col-md-1, .col-md-10, .col-md-11, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+        padding: 0 2px;
+    }
+    .marksheet {
+        visibility: visible;
+        background-size: calc(100% - 0px) calc(100% - 0px) !important;
+        -webkit-print-color-adjust: exact;
+        padding-bottom: 0px !important;
+        margin-bottom: 0 !important;
+        width: 220mm;
+        height: 332mm;
+        margin: 0 auto;
+    }
+    .text-center{
+        text-align: center !important;
+    }
+    .text-bold{
+        font-weight: 800 !important;
+    }
+        }
+
+     
+
+
